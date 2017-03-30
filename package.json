@@ -1,0 +1,30 @@
+{
+  "name": "sphinx-web-std",
+  "version": "0.0.1",
+  "description": "Web Application Skeleton",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo start",
+    "stop": "echo stop",
+    "test": "node node_modules/.bin/mocha -r test/bootstrap",
+    "start-http": "node http",
+    "start-socket": "echo start-socket"
+  },
+  "author": "Sphinx Software <contact@sphinx-software.com>",
+  "license": "ISC",
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "dotenv": "^4.0.0",
+    "koa-static": "^3.0.0",
+    "sphinx": "file:///Users/sonle/WebstormProjects/sphinx-web-stdlib",
+    "sqlite3": "^3.1.8",
+    "winston": "^2.3.1",
+    "winston-daily-rotate-file": "^1.4.6"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.2.0",
+    "sinon": "^2.1.0"
+  }
+}

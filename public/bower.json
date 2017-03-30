@@ -1,0 +1,20 @@
+{
+  "name": "sphinx-web-std",
+  "description": "Web Application Skeleton",
+  "main": "index.js",
+  "authors": [
+    "Sphinx Software <contact@sphinx-software.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

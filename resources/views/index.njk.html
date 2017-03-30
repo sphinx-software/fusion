@@ -1,0 +1,20 @@
+{% extends 'layouts/master' %}
+
+{% block title %}Sphinx Web Application{% endblock %}
+
+{% block content %}
+<div class="col-md-6 col-md-offset-3" style="margin-top: 150px">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h1>Hi! <small>from Sphinx</small></h1>
+        </div>
+        <div class="panel-footer">
+            <div class="pull-right">
+                <a target="_blank" href="{{url.fullyQualified('https://www.google.com.vn/#q=:question', {question: 'test'})}}" class="btn btn-default">Search for test</a>
+                <a href="{{url.route('user', {user: 'You'})}}" class="btn btn-primary">Go! <i class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
