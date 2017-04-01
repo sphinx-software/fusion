@@ -22,6 +22,7 @@ module.exports = {
         require('sphinx/view-engine-nunjucks/nunjucks.provider'),
         require('sphinx/view/view.provider'),
         require('sphinx/url/url.provider'),
+        require('sphinx/meta-injector/meta-injector.provider'),
 
         // Application providers
         // add more providers to extend the application functionality
@@ -39,5 +40,6 @@ module.exports = {
     redis   : require('./redis'),
     session : require('./session'),
     cache   : require('./cache'),
-    view    : require('./view')
+    view    : require('./view'),
+    injects : require('./injects'),
 };

@@ -1,5 +1,10 @@
+const Quotes = require('app/quotes/quotes');
+
 exports.register = async (container) => {
     // application services
+    container.singleton('quotes', async () => {
+        return new Quotes();
+    });
 };
 
 exports.boot = async (container) => {
@@ -8,7 +13,7 @@ exports.boot = async (container) => {
 
     // Add extra data for the view
     //
-    view.rendering('welcome', function (template) {
+    view.rendering('welcome', (template) => {
         template.bind('date', new Date());
     });
 

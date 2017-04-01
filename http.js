@@ -1,6 +1,5 @@
 require('app-module-path')
     .addPath(__dirname)
-
 ;
 
 const config    = require('config/index');
