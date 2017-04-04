@@ -1,11 +1,11 @@
 class WelcomeController {
 
-    static get dependencies() {
-        return ['quotes'];
-    }
-
     constructor(quotes) {
         this.quotes = quotes;
+    }
+
+    static get dependencies() {
+        return ['quotes'];
     }
 
     async index(context) {
@@ -14,7 +14,7 @@ class WelcomeController {
 
     async user(context) {
         context.body = context.view.make('welcome')
-            .bind('user', context.params.user)
+            .bind('user', context.user)
         ;
     }
 }

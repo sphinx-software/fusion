@@ -23,11 +23,16 @@ module.exports = {
         require('sphinx/view/view.provider'),
         require('sphinx/url/url.provider'),
         require('sphinx/meta-injector/meta-injector.provider'),
+        require('sphinx/routing/routing.provider'),
 
         // Application providers
         // add more providers to extend the application functionality
-        require('app/app.provider'),
-        require('app/routing.provider'),
+        require('app/app.provider')
+    ],
+
+    injects: [
+        // Injects dependencies by its metadata here
+        require('app/http/welcome.controller')
     ],
 
     // Services related configuration
@@ -41,5 +46,5 @@ module.exports = {
     session : require('./session'),
     cache   : require('./cache'),
     view    : require('./view'),
-    injects : require('./injects'),
+    routes  : require('./routes'),
 };

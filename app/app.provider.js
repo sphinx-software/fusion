@@ -1,7 +1,8 @@
 const Quotes = require('app/quotes/quotes');
 
 exports.register = async (container) => {
-    // application services
+
+    // Application services
     container.singleton('quotes', async () => {
         return new Quotes();
     });
