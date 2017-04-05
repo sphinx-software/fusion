@@ -9,9 +9,6 @@ module.exports = {
     // Global middlewares
     middlewares : [
 
-        // Uncomment the middleware bellow to enable view service
-        require('sphinx/view/view-render.middleware'),
-
         // Uncomment the middleware bellow to enable session service
         require('sphinx/session/session-start.middleware'),
 
