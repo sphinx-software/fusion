@@ -24,6 +24,8 @@ module.exports = {
         require('sphinx/url/url.provider'),
         require('sphinx/meta-injector/meta-injector.provider'),
         require('sphinx/routing/routing.provider'),
+        
+        require('sphinx-auth/auth.provider'),
 
         // Application providers
         // add more providers to extend the application functionality
@@ -37,6 +39,7 @@ module.exports = {
 
     // Services related configuration
     acl     : require('./acl'),
+    auth    : require('./auth'),
     database: require('./database'),
     mongo   : require('./mongo'),
     hash    : require('./hash'),

@@ -9,11 +9,8 @@ module.exports = {
     // Global middlewares
     middlewares : [
 
-        // Uncomment the middleware bellow to enable view service
-        require('sphinx/view/view-render.middleware'),
-
         // Uncomment the middleware bellow to enable session service
-        // require('sphinx/session/session-start.middleware'),
+        require('sphinx/session/session-start.middleware'),
 
         // Uncomment the middleware bellow to serve static content by the framework
         require('koa-static')(path.normalize(path.join(__dirname, '..', 'public'))),
