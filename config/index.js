@@ -32,7 +32,8 @@ module.exports = {
 
     injects: [
         // Injects dependencies by its metadata here
-        require('app/http/welcome.controller')
+        require('app/http/welcome.controller'),
+        require('app/command/quotes.command')
     ],
 
     // Services related configuration

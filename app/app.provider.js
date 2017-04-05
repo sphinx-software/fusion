@@ -20,4 +20,7 @@ exports.boot = async (container) => {
 
     // Other services configuration here
     //
+
+    let consoleKernel = await container.make('console.kernel');
+    await consoleKernel.register('QuoteCommand')
 };
