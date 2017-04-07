@@ -14,5 +14,9 @@ module.exports = {
     connection: {
         filename: path.normalize(path.join(__dirname, '..', 'resources', 'database', 'db.sqlite')),
     },
-    useNullAsDefault: true
+    useNullAsDefault: true,
+    migration: {
+        directory: path.normalize(path.join(__dirname, '..', 'resources', 'database', 'migrations')),
+        tableName: 'migrations'
+    }
 };
