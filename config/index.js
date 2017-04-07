@@ -22,15 +22,25 @@ module.exports = {
         require('sphinx/view-engine-nunjucks/nunjucks.provider'),
         require('sphinx/view/view.provider'),
         require('sphinx/url/url.provider'),
+        require('sphinx/meta-injector/meta-injector.provider'),
+        require('sphinx/routing/routing.provider'),
+        
+        require('sphinx-auth/auth.provider'),
 
         // Application providers
         // add more providers to extend the application functionality
-        require('app/app.provider'),
-        require('app/routing.provider'),
+        require('app/app.provider')
+    ],
+
+    injects: [
+        // Injects dependencies by its metadata here
+        require('app/http/welcome.controller'),
+        require('app/command/quotes.command')
     ],
 
     // Services related configuration
     acl     : require('./acl'),
+    auth    : require('./auth'),
     database: require('./database'),
     mongo   : require('./mongo'),
     hash    : require('./hash'),
@@ -39,5 +49,6 @@ module.exports = {
     redis   : require('./redis'),
     session : require('./session'),
     cache   : require('./cache'),
-    view    : require('./view')
+    view    : require('./view'),
+    routes  : require('./routes'),
 };

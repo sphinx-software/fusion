@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{url.asset('favicon.ico')}}">
     <title>{% block title %} {% endblock %}</title>
     <link rel="stylesheet" href="{{url.asset('bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
 </head>
 <body>
-
 <div class="container-fluid">
     {% block content %}
     {% endblock %}
 </div>
 </body>
 </html>
-
-

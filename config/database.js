@@ -12,6 +12,14 @@ module.exports = {
     // },
     client: 'sqlite3',
     connection: {
-        filename: path.normalize(path.join(__dirname, '..', 'resources', 'database', 'db.sqlite'))
+        filename: path.normalize(path.join(__dirname, '..', 'resources', 'database', 'db.sqlite')),
+    },
+    useNullAsDefault: true,
+    migration: {
+        directory: path.normalize(path.join(__dirname, '..', 'resources', 'database', 'migrations')),
+        tableName: 'migrations'
+    },
+    seed: {
+        directory: path.normalize(path.join(__dirname, '..', 'resources', 'database', 'seeders')),
     }
 };
