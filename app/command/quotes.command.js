@@ -1,3 +1,5 @@
+const chalk = require('chalk');
+
 class QuoteCommand {
 
     constructor(quote) {
@@ -18,10 +20,12 @@ class QuoteCommand {
         ];
     }
 
-    async action(context) {
-        for(let index = 0; index < context.number; index++) {
+    async action() {
+        for(let index = 0; index < this.context.number; index++) {
             let quote = this.quote.get();
-            console.log('%s -- %s', quote.content, quote.author);
+            this.io.run(() => {
+                console.log('%s -- %s', chalk.green(quote.content), chalk.yellow(quote.author));
+            });
         }
     }
 
