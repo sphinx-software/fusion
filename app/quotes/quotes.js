@@ -5,7 +5,7 @@ class Quotes {
     get quotes () {
         return [
             {
-                content: 'Hello world',
+                content: 'Hello world!',
                 author: 'Programmer',
             },
             {
