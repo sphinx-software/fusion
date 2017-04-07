@@ -9,7 +9,7 @@ const EventEmitter = require('events').EventEmitter;
     let container       = await bootstrap(config, new Container(new EventEmitter()));
     let consoleKernel   = await container.make('console.kernel');
 
-    consoleKernel.run();
+    consoleKernel.run(process.argv);
 })().catch(error => {
     console.error(error);
     process.exit(error.code);
