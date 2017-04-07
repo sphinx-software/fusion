@@ -18,5 +18,8 @@ module.exports = {
     migration: {
         directory: path.normalize(path.join(__dirname, '..', 'resources', 'database', 'migrations')),
         tableName: 'migrations'
+    },
+    seed: {
+        directory: path.normalize(path.join(__dirname, '..', 'resources', 'database', 'seeders')),
     }
 };
