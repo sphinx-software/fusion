@@ -11,7 +11,7 @@ class QuoteCommand {
     }
 
     get description() {
-        return 'display a random quote';
+        return 'Displays a random quote';
     }
 
     get options() {
