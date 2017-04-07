@@ -23,7 +23,7 @@ class QuoteCommand {
     async action() {
         for(let index = 0; index < this.context.number; index++) {
             let quote = this.quote.get();
-            this.io.run(() => {
+            this.io.run(async () => {
                 console.log('%s -- %s', chalk.green(quote.content), chalk.yellow(quote.author));
             });
         }
