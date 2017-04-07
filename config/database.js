@@ -12,6 +12,6 @@ module.exports = {
     // },
     client: 'sqlite3',
     connection: {
-        filename: path.normalize(path.join(__dirname, '..', 'resources', 'database', 'db.sqlite'))
+        filename: path.normalize(path.join(__dirname, '..', 'resources', 'database', 'db.sqlite')),
     }
 };
