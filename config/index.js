@@ -24,7 +24,9 @@ module.exports = {
         require('sphinx/url/url.provider'),
         require('sphinx/meta-injector/meta-injector.provider'),
         require('sphinx/routing/routing.provider'),
-        
+        require('sphinx/mail/mail.provider'),
+
+        // Extended packs
         require('sphinx-auth/auth.provider'),
 
         // Application providers
@@ -51,4 +53,5 @@ module.exports = {
     cache   : require('./cache'),
     view    : require('./view'),
     routes  : require('./routes'),
+    mail    : require('./mail')
 };
