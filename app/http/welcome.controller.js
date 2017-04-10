@@ -20,7 +20,7 @@ class WelcomeController {
             });
         });
 
-        await mail.send('google');
+        await mail.send();
     }
 
     async user(context) {
