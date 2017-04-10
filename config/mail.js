@@ -16,8 +16,8 @@ module.exports = {
             // For more transport configuration, see: https://nodemailer.com
             service: 'gmail',
             auth: {
-                user: process.env.MAIL_GOOGLE_USERNAME || 'test1@sphinx-software.com',
-                pass: process.env.MAIL_GOOGLE_PASSWORD || 'hackduocthidung'
+                user: process.env.MAIL_GOOGLE_USERNAME || 'username@gmail.com',
+                pass: process.env.MAIL_GOOGLE_PASSWORD || 'password'
             }
         },
 
