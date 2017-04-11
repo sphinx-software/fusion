@@ -25,6 +25,7 @@ module.exports = {
         require('sphinx/meta-injector/meta-injector.provider'),
         require('sphinx/routing/routing.provider'),
         require('sphinx/mail/mail.provider'),
+        require('sphinx/timer/timer.provider'),
 
         // Extended packs
         require('sphinx-auth/auth.provider'),
