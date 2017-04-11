@@ -13,14 +13,21 @@ class WelcomeController {
         context.body = context.view.make('index').bind('quote', this.quotes.get());
 
         let mail = await this.mailer.compose('index', {quote: this.quotes.get()}, async (mail) => {
-            mail.to('son.levuthai@gmail.com');
-            mail.attachments({
-                file: '/Users/sonle/WebstormProjects/sphinx-web-skeleton/package.json',
-                name: 'package.json'
-            });
+            mail
+                .to('son.levuthai@gmail.com, rikky@sphinx-software.com')
+                .cc([
+                    'ta quang phong <phongtq@sphinx-software.com>'
+                ])
+                .attachments([
+                    {
+                        file: '/Users/sonle/WebstormProjects/sphinx-web-skeleton/package.json',
+                        name: 'package.json'
+                    }
+                ]);
         });
 
-        await mail.send();
+        await queue.enque(SendMailJob);
+
     }
 
     async user(context) {
