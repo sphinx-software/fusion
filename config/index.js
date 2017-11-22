@@ -27,9 +27,6 @@ module.exports = {
         require('sphinx/mail/mail.provider'),
         require('sphinx/timer/timer.provider'),
 
-        // Extended packs
-        require('sphinx-auth/auth.provider'),
-
         // Application providers
         // add more providers to extend the application functionality
         require('app/app.provider')
