@@ -21,7 +21,8 @@
     "sphinx": "git+https://github.com/sphinx-software/sphinx-web-stdlib.git",
     "sqlite3": "^3.1.8",
     "winston": "^2.3.1",
-    "winston-daily-rotate-file": "^1.4.6"
+    "winston-daily-rotate-file": "^1.4.6",
+    "youch": "^2.0.5"
   },
   "devDependencies": {
     "chai": "^3.5.0",
