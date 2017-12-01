@@ -9,6 +9,9 @@ module.exports = {
     // Global middlewares
     middlewares : [
 
+        // Uncomment the middleware bellow to enable system development error reporting
+        // require('app/http/handle-error.middleware'),
+
         // Uncomment the middleware bellow to enable session service
         // require('sphinx/session/session-start.middleware'),
 
