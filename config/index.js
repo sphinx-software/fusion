@@ -5,27 +5,27 @@ module.exports = {
     // Services will be used for the application
     providers: [
 
-        // Sphinx default providers
+        // @sphinx-software/fusion default providers
         // remove unused provider if needed to match with the application requirement
-        require('sphinx/acl/acl.provider'),
-        require('sphinx/database/database.provider'),
-        require('sphinx/http/http.provider'),
-        require('sphinx/mongo/mongo.provider'),
-        require('sphinx/hash/hash.provider'),
-        require('sphinx/log/log.provider'),
-        require('sphinx/serializer/serializer.provider'),
-        require('sphinx/redis/redis.provider'),
-        require('sphinx/storage/storage-factory.provider'),
-        require('sphinx/session/session.provider'),
-        require('sphinx/cache/cache.provider'),
-        require('sphinx/console/console.provider'),
-        require('sphinx/view-engine-nunjucks/nunjucks.provider'),
-        require('sphinx/view/view.provider'),
-        require('sphinx/url/url.provider'),
-        require('sphinx/meta-injector/meta-injector.provider'),
-        require('sphinx/routing/routing.provider'),
-        require('sphinx/mail/mail.provider'),
-        require('sphinx/timer/timer.provider'),
+        require('@sphinx-software/fusion/acl/acl.provider'),
+        require('@sphinx-software/fusion/database/database.provider'),
+        require('@sphinx-software/fusion/http/http.provider'),
+        require('@sphinx-software/fusion/mongo/mongo.provider'),
+        require('@sphinx-software/fusion/hash/hash.provider'),
+        require('@sphinx-software/fusion/log/log.provider'),
+        require('@sphinx-software/fusion/serializer/serializer.provider'),
+        require('@sphinx-software/fusion/redis/redis.provider'),
+        require('@sphinx-software/fusion/storage/storage-factory.provider'),
+        require('@sphinx-software/fusion/session/session.provider'),
+        require('@sphinx-software/fusion/cache/cache.provider'),
+        require('@sphinx-software/fusion/console/console.provider'),
+        require('@sphinx-software/fusion/view-engine-nunjucks/nunjucks.provider'),
+        require('@sphinx-software/fusion/view/view.provider'),
+        require('@sphinx-software/fusion/url/url.provider'),
+        require('@sphinx-software/fusion/meta-injector/meta-injector.provider'),
+        require('@sphinx-software/fusion/routing/routing.provider'),
+        require('@sphinx-software/fusion/mail/mail.provider'),
+        require('@sphinx-software/fusion/timer/timer.provider'),
 
         // Application providers
         // add more providers to extend the application functionality
