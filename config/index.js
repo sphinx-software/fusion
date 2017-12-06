@@ -5,7 +5,7 @@ module.exports = {
     // Services will be used for the application
     providers: [
 
-        // Sphinx default providers
+        // @sphinx-software/fusion default providers
         // remove unused provider if needed to match with the application requirement
         require('@sphinx-software/fusion/acl/acl.provider'),
         require('@sphinx-software/fusion/database/database.provider'),
@@ -24,7 +24,9 @@ module.exports = {
         require('@sphinx-software/fusion/url/url.provider'),
         require('@sphinx-software/fusion/meta-injector/meta-injector.provider'),
         require('@sphinx-software/fusion/routing/routing.provider'),
-        
+        require('@sphinx-software/fusion/mail/mail.provider'),
+        require('@sphinx-software/fusion/timer/timer.provider'),
+
         // Application providers
         // add more providers to extend the application functionality
         require('app/app.provider')
@@ -49,4 +51,5 @@ module.exports = {
     cache   : require('./cache'),
     view    : require('./view'),
     routes  : require('./routes'),
+    mail    : require('./mail')
 };

@@ -1,11 +1,12 @@
 class WelcomeController {
 
-    constructor(quotes) {
+    constructor(quotes, mailer) {
         this.quotes = quotes;
+        this.mailer = mailer;
     }
 
     static get dependencies() {
-        return ['quotes'];
+        return ['quotes', 'mailer'];
     }
 
     async index(context) {
