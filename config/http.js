@@ -13,7 +13,7 @@ module.exports = {
         // require('app/http/handle-error.middleware'),
 
         // Uncomment the middleware bellow to enable session service
-        //require('@sphinx-software/fusion/session/session-start.middleware'),
+        // require('@sphinx-software/fusion/session/session-start.middleware'),
 
         // Uncomment the middleware bellow to serve static content by the framework
         require('koa-static')(path.normalize(path.join(__dirname, '..', 'public'))),
