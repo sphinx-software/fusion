@@ -14,7 +14,7 @@ module.exports = {
         require('@sphinx-software/fusion/hash/hash.provider'),
         require('@sphinx-software/fusion/log/log.provider'),
         require('@sphinx-software/fusion/serializer/serializer.provider'),
-        require('@sphinx-software/fusion/redis/redis.provider'),
+        require('@sphinx-software/fusion-redis/redis.provider'),
         require('@sphinx-software/fusion/storage/storage-factory.provider'),
         require('@sphinx-software/fusion/session/session.provider'),
         require('@sphinx-software/fusion/cache/cache.provider'),
