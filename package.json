@@ -1,6 +1,6 @@
 {
   "name": "sphinx-web-std",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Web Application Skeleton",
   "main": "index.js",
   "scripts": {
