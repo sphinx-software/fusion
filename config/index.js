@@ -15,7 +15,6 @@ module.exports = {
         require('@sphinx-software/fusion/session/session.provider'),
         require('@sphinx-software/fusion/cache/cache.provider'),
         require('@sphinx-software/fusion/console/console.provider'),
-        require('@sphinx-software/fusion/view-engine-nunjucks/nunjucks.provider'),
         require('@sphinx-software/fusion/view/view.provider'),
         require('@sphinx-software/fusion/url/url.provider'),
         require('@sphinx-software/fusion/meta-injector/meta-injector.provider'),
@@ -28,6 +27,7 @@ module.exports = {
         require('@sphinx-software/fusion-knex/fusion-knex.provider'),
         require('@sphinx-software/fusion-mongodb/mongo-db.provider'),
         require('@sphinx-software/fusion-redis/redis.provider'),
+        require('@sphinx-software/fusion-nunjucks/nunjucks.provider'),
 
         // Application providers
         // add more providers to extend the application functionality
