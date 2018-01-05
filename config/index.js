@@ -10,7 +10,7 @@ module.exports = {
         require('@sphinx-software/acl/acl.provider'),
         require('@sphinx-software/fusion-knex/fusion-knex.provider'),
         require('@sphinx-software/fusion/http/http.provider'),
-        require('@sphinx-software/fusion/mongo/mongo.provider'),
+        require('@sphinx-software/fusion-mongodb/mongo-db.provider'),
         require('@sphinx-software/fusion/hash/hash.provider'),
         require('@sphinx-software/fusion/log/log.provider'),
         require('@sphinx-software/fusion/serializer/serializer.provider'),

@@ -17,6 +17,7 @@
     "@sphinx-software/container": "^0.1",
     "@sphinx-software/acl": "^0.1",
     "@sphinx-software/fusion-knex": "^0.1",
+    "@sphinx-software/fusion-mongodb": "^0.1",
     "app-module-path": "^2.2.0",
     "chalk": "^1.1.3",
     "dotenv": "^4.0.0",
