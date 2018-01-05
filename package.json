@@ -13,7 +13,7 @@
   "author": "Sphinx Software <contact@sphinx-software.com>",
   "license": "ISC",
   "dependencies": {
-    "@sphinx-software/fusion": "git+https://github.com/sphinx-software/sphinx-web-stdlib.git#develop",
+    "@sphinx-software/fusion": "^0.1",
     "@sphinx-software/container": "^0.1",
     "@sphinx-software/acl": "^0.1",
     "@sphinx-software/fusion-knex": "^0.1",
