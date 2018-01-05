@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "@sphinx-software/fusion": "git+https://github.com/sphinx-software/sphinx-web-stdlib.git#develop",
+    "@sphinx-software/container": "0.1.0",
     "app-module-path": "^2.2.0",
     "chalk": "^1.1.3",
     "dotenv": "^4.0.0",
