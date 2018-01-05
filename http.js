@@ -4,7 +4,7 @@ require('app-module-path')
 
 const config    = require('config/index');
 const bootstrap = require('bootstrap/index');
-const Container = require('@sphinx-software/fusion/container');
+const Container = require('@sphinx-software/container');
 const EventEmitter = require('events').EventEmitter;
 
 (async () => {
