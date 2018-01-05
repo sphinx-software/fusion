@@ -7,7 +7,7 @@ module.exports = {
 
         // @sphinx-software/fusion default providers
         // remove unused provider if needed to match with the application requirement
-        require('@sphinx-software/fusion/acl/acl.provider'),
+        require('@sphinx-software/acl/acl.provider'),
         require('@sphinx-software/fusion/database/database.provider'),
         require('@sphinx-software/fusion/http/http.provider'),
         require('@sphinx-software/fusion/mongo/mongo.provider'),
