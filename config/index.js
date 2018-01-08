@@ -41,17 +41,18 @@ module.exports = {
     ],
 
     // Services related configuration
-    acl     : require('./acl'),
-    auth    : require('./auth'),
-    database: require('./database'),
-    mongo   : require('./mongo'),
-    hash    : require('./hash'),
-    http    : require('./http'),
-    log     : require('./log'),
-    redis   : require('./redis'),
-    session : require('./session'),
-    cache   : require('./cache'),
-    view    : require('./view'),
-    routes  : require('./routes'),
-    mail    : require('./mail')
+    acl      : require('./acl'),
+    auth     : require('./auth'),
+    database : require('./database'),
+    mongo    : require('./mongo'),
+    hash     : require('./hash'),
+    http     : require('./http'),
+    log      : require('./log'),
+    redis    : require('./redis'),
+    session  : require('./session'),
+    cache    : require('./cache'),
+    view     : require('./view'),
+    routes   : require('./routes'),
+    mail     : require('./mail'),
+    paginator: require('./paginator')
 };
