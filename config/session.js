@@ -18,6 +18,9 @@ module.exports = {
         database: {
             table      : 'sessions'
         },
+        redis: {
+
+        },
         memory: { }
     }
 };
