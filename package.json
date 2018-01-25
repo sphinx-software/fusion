@@ -1,6 +1,6 @@
 {
   "name": "sphinx-web-std",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Web Application Skeleton",
   "main": "index.js",
   "scripts": {
@@ -13,8 +13,14 @@
   "author": "Sphinx Software <contact@sphinx-software.com>",
   "license": "ISC",
   "dependencies": {
-    "@sphinx-software/fusion": "git+https://github.com/sphinx-software/sphinx-web-stdlib.git#develop",
+    "@sphinx-software/fusion": "0.1.11",
+    "@sphinx-software/fusion-knex": "^0.1.12",
+    "@sphinx-software/fusion-mongodb": "^0.1.11",
+    "@sphinx-software/fusion-nunjucks": "^0.1.11",
+    "@sphinx-software/fusion-redis": "^0.1.11",
     "app-module-path": "^2.2.0",
+    "babel-preset-node8": "^1.2.0",
+    "babel-register": "^6.26.0",
     "chalk": "^1.1.3",
     "dotenv": "^4.0.0",
     "koa-static": "^3.0.0",

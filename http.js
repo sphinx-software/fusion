@@ -1,11 +1,9 @@
-require('app-module-path')
-    .addPath(__dirname)
-;
+import config from 'config';
+import bootstrap from 'bootstrap';
+import Container from '@sphinx-software/fusion/container';
+import {EventEmitter} from 'events';
 
-const config    = require('config/index');
-const bootstrap = require('bootstrap/index');
-const Container = require('@sphinx-software/fusion/container');
-const EventEmitter = require('events').EventEmitter;
+
 
 (async () => {
     let container  = await bootstrap(config, new Container(new EventEmitter()));
