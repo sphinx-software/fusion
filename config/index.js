@@ -1,3 +1,6 @@
+import WelcomeController from 'app/http/WelcomeController';
+import QuoteCommand      from 'app/command/QuotesCommand';
+
 require('dotenv').load();
 
 module.exports = {

@@ -1,7 +1,7 @@
 import lodash from 'lodash';
 import config from 'config';
 import bootstrap from 'bootstrap';
-import Container from '@sphinx-software/container';
+import Container from '@sphinx-software/fusion/container';
 import {EventEmitter} from 'events';
 
 (async () => {
@@ -22,7 +22,7 @@ import {EventEmitter} from 'events';
         .use(router.routes())
         .use(router.allowedMethods())
     ;
-    
+
     httpKernel.listen(config.http.port, () => console.log(`Server started at port: ${config.http.port}`));
 })().catch(error => {
     console.error(error);
