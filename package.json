@@ -25,7 +25,6 @@
     "dotenv": "^4.0.0",
     "koa-static": "^3.0.0",
     "lodash": "^4.17.4",
-    "sqlite3": "^3.1.8",
     "winston": "^2.3.1",
     "winston-daily-rotate-file": "^1.4.6",
     "youch": "^2.0.5"
