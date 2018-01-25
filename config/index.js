@@ -1,6 +1,3 @@
-import WelcomeController from 'app/http/WelcomeController';
-import QuoteCommand      from 'app/command/QuotesCommand';
-
 require('dotenv').load();
 
 module.exports = {
@@ -26,7 +23,6 @@ module.exports = {
         require('@sphinx-software/fusion/timer/timer.provider'),
 
         // Extended providers
-        // require('@sphinx-software/acl/acl.provider'),
         require('@sphinx-software/fusion-knex/fusion-knex.provider'),
         require('@sphinx-software/fusion-mongodb/mongo-db.provider'),
         require('@sphinx-software/fusion-redis/redis.provider'),
@@ -44,7 +40,6 @@ module.exports = {
     ],
 
     // Services related configuration
-    acl      : require('./acl'),
     auth     : require('./auth'),
     database : require('./database'),
     mongo    : require('./mongo'),

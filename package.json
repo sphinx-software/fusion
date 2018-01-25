@@ -1,6 +1,6 @@
 {
   "name": "sphinx-web-std",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Web Application Skeleton",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
   "author": "Sphinx Software <contact@sphinx-software.com>",
   "license": "ISC",
   "dependencies": {
+    "@sphinx-software/container": "^0.1.11",
     "@sphinx-software/fusion": "0.1.11",
     "@sphinx-software/fusion-knex": "^0.1.12",
     "@sphinx-software/fusion-mongodb": "^0.1.11",

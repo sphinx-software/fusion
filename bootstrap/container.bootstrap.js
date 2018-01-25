@@ -1,6 +1,6 @@
 const lodash = require('lodash');
 
-module.exports = async function (config, container) {
+export default async function (config, container) {
 
     container.value('config', config);
 

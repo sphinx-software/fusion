@@ -9,18 +9,17 @@ exports.register = async (container) => {
 };
 
 exports.boot = async (container) => {
+    // Other services configuration here
+};
 
-    let view = await container.make('view');
-
+exports.bootHttp = async (context) => {
     // Add extra data for the view
-    //
-    view.rendering('welcome', (template) => {
+    context.view.rendering('welcome', (template) => {
         template.bind('date', new Date());
     });
+};
 
-    // Other services configuration here
-    //
-
-    let consoleKernel = await container.make('console.kernel');
-    await consoleKernel.register('QuoteCommand');
+exports.bootConsole = async (consoleKernel) => {
+    // register the command for the console
+    await consoleKernel.register('QuoteCommand')
 };
