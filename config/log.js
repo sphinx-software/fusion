@@ -1,7 +1,7 @@
-require('winston-daily-rotate-file');
+import winstonDailyRotateFile from 'winston-daily-rotate-file';
 
-const winston = require('winston');
-const path    = require('path');
+import winston from 'winston';
+import path    from 'path';
 
 // Logger configuration
 // for more options see https://github.com/winstonjs/winston

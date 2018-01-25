@@ -1,4 +1,4 @@
-const path = require('path');
+import path from 'path';
 
 module.exports = {
     port        : process.env.HTTP_PORT   || 3000,

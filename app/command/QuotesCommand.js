@@ -1,9 +1,9 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
-class QuoteCommand {
+export default class QuoteCommand {
 
     constructor(quote) {
-        this.quote = quote
+        this.quote = quote;
     }
 
     get name() {
@@ -21,7 +21,7 @@ class QuoteCommand {
     }
 
     async action() {
-        for(let index = 0; index < this.context.number; index++) {
+        for (let index = 0; index < this.context.number; index++) {
             let quote = this.quote.get();
             this.io.run(async () => {
                 console.log('%s -- %s', chalk.green(quote.content), chalk.yellow(quote.author));
@@ -33,5 +33,3 @@ class QuoteCommand {
         return ['quotes'];
     }
 }
-
-module.exports = QuoteCommand;

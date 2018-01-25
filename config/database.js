@@ -1,4 +1,4 @@
-const path = require('path');
+import path from 'path';
 
 // Database configuration
 // For more options see http://knexjs.org

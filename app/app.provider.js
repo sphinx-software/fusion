@@ -1,4 +1,4 @@
-const Quotes = require('app/quotes/quotes');
+import Quotes from 'app/quotes/Quotes';
 
 exports.register = async (container) => {
 
@@ -22,5 +22,5 @@ exports.boot = async (container) => {
     //
 
     let consoleKernel = await container.make('console.kernel');
-    await consoleKernel.register('QuoteCommand')
+    await consoleKernel.register('QuoteCommand');
 };
