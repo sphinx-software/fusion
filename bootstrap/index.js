@@ -1,5 +1,6 @@
-module.exports = async function (config, container) {
-    await require('./container.bootstrap')(config, container);
+import containerBootstrap from './container.bootstrap';
 
+export default async function (config, container) {
+    await containerBootstrap(config, container);
     return container;
-};
+}
