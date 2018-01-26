@@ -1,4 +1,4 @@
-import {singleton} from "../../../MetaInjector";
+import {singleton} from "@sphinx-software/fusion/MetaInjector";
 import lodash from 'lodash';
 
 @singleton()
