@@ -3,25 +3,26 @@ import winston from 'winston';
 import path    from 'path';
 import cache   from './cache';
 import koaStatic from 'koa-static';
-import SessionStartMiddleware from "../../Session/SessionStartMiddleware";
+
+import SessionStartMiddleware from "@sphinx-software/fusion/Session/SessionStartMiddleware";
 
 export default {
 
     modules: [
         // Frameworks Module
-        './../Http',
-        './../Serializer',
-        './../Hash',
-        './../Log',
-        './../MetaInjector',
-        './../View',
-        './../Storage',
-        './../Cache',
-        './../Url',
-        './../Timer',
-        './../Mail',
-        './../Console',
-        './../Session',
+        '@sphinx-software/fusion/Http',
+        '@sphinx-software/fusion/Serializer',
+        '@sphinx-software/fusion/Hash',
+        '@sphinx-software/fusion/Log',
+        '@sphinx-software/fusion/MetaInjector',
+        '@sphinx-software/fusion/View',
+        '@sphinx-software/fusion/Storage',
+        '@sphinx-software/fusion/Cache',
+        '@sphinx-software/fusion/Url',
+        '@sphinx-software/fusion/Timer',
+        '@sphinx-software/fusion/Mail',
+        '@sphinx-software/fusion/Console',
+        '@sphinx-software/fusion/Session',
 
         // Application Module
         'Http',
@@ -37,9 +38,9 @@ export default {
 
         // Global middlewares
         middlewares : [
-            koaStatic(path.normalize(path.join(__dirname, '..', 'public')))
+            koaStatic(path.normalize(path.join(__dirname, '..', 'public'))),
             // Uncomment the middleware bellow to enable session service
-            // SessionStartMiddleware
+            SessionStartMiddleware
         ],
     },
     cache,
