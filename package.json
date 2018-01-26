@@ -14,10 +14,6 @@
   "license": "ISC",
   "dependencies": {
     "@sphinx-software/fusion": "0.1.11",
-    "@sphinx-software/fusion-knex": "^0.1.12",
-    "@sphinx-software/fusion-mongodb": "^0.1.11",
-    "@sphinx-software/fusion-nunjucks": "^0.1.11",
-    "@sphinx-software/fusion-redis": "^0.1.11",
     "app-module-path": "^2.2.0",
     "babel-preset-node8": "^1.2.0",
     "babel-register": "^6.26.0",
