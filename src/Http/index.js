@@ -1,6 +1,15 @@
 import { controller, get } from '@sphinx-software/fusion/Http';
 import { singleton } from '@sphinx-software/fusion/MetaInjector';
 import {Quotes} from "../Quotes";
+import {viewRendering} from "@sphinx-software/fusion/View/ViewServiceProvider";
+
+@singleton()
+@viewRendering('welcome')
+export class DateTimeViewMacro {
+    run(view) {
+        view.bind('date', new Date());
+    }
+}
 
 @singleton()
 export class FormatUserNameMiddleware {
