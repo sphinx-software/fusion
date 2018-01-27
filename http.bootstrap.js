@@ -1,6 +1,7 @@
 import * as config from './config';
 import fusion from '@sphinx-software/fusion/Fusion/Fusion';
 import Container from '@sphinx-software/container';
+import {HttpKernel, HttpRouter} from '@sphinx-software/fusion/Fusion/ServiceContracts';
 import EventEmitter from 'events';
 
 (async () => {
@@ -10,8 +11,8 @@ import EventEmitter from 'events';
     modules.forEach(module => fusion.use(module));
 
     let container = await fusion.activate(config, new Container(new EventEmitter()));
-    let kernel    = await container.make('http.kernel');
-    let router    = await container.make('http.router');
+    let kernel    = await container.make(HttpKernel);
+    let router    = await container.make(HttpRouter);
 
     kernel.use(router.routes()).use(router.allowedMethods());
 
