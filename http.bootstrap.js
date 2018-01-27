@@ -1,7 +1,7 @@
 import * as config from './config';
 import fusion from '@sphinx-software/fusion/Fusion/Fusion';
 import Container from '@sphinx-software/container';
-import {HttpKernel, HttpRouter} from '@sphinx-software/fusion/Fusion/ServiceContracts';
+import {HttpKernel, HttpRouter} from '@sphinx-software/fusion';
 import EventEmitter from 'events';
 
 (async () => {

@@ -1,7 +1,7 @@
 import * as config from './config';
 
 import fusion from '@sphinx-software/fusion/Fusion/Fusion';
-import {ConsoleKernel} from '@sphinx-software/fusion/Fusion/ServiceContracts';
+import {ConsoleKernel} from '@sphinx-software/fusion';
 import Container from '@sphinx-software/container';
 import EventEmitter from 'events';
 
