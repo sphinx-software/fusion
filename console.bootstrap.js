@@ -1,5 +1,6 @@
+import * as config from './config';
+
 import fusion from '@sphinx-software/fusion/Fusion/Fusion';
-import config from './config';
 import Container from '@sphinx-software/container';
 import EventEmitter from 'events';
 
