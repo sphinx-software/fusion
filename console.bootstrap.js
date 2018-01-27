@@ -14,10 +14,7 @@ import EventEmitter from 'events';
     let container = await fusion.activate(config, new Container(new EventEmitter()));
     let kernel    = await container.make(ConsoleKernel);
 
-    kernel.parse(process.argv);
-
-    if (kernel.args.length === 0) {
-        kernel.help();
-    }
+    kernel.onError(console.error);
+    kernel.handle(process.argv);
 
 })().catch(console.error);
