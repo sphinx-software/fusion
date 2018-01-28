@@ -15,6 +15,6 @@ import EventEmitter from 'events';
     let kernel    = await container.make(ConsoleKernel);
 
     kernel.onError(console.error);
-    kernel.handle(process.argv);
+    await kernel.handle(process.argv);
 
 })().catch(console.error);
