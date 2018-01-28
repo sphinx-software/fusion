@@ -1,20 +1,17 @@
 {
-  "name": "sphinx-web-std",
-  "version": "1.0.0",
-  "description": "Web Application Skeleton",
+  "name": "fusion-application",
+  "version": "1.2.0",
+  "description": "Fusion Application",
   "main": "index.js",
   "scripts": {
-    "start": "echo start",
-    "stop": "echo stop",
-    "test": "node node_modules/.bin/mocha -r test/bootstrap",
-    "start-http": "node http",
-    "start-socket": "echo start-socket"
+    "start": "node start",
+    "test": "node node_modules/.bin/mocha -r test/bootstrap"
   },
   "author": "Sphinx Software <contact@sphinx-software.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@sphinx-software/container": "^0.1.13",
-    "@sphinx-software/fusion": "1.1.2",
+    "@sphinx-software/fusion": "^1.2",
     "app-module-path": "^2.2.0",
     "babel-plugin-dynamic-import-node": "^1.2.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
