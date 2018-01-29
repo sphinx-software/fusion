@@ -13,6 +13,7 @@ export default [
     '@sphinx-software/fusion/Mail',
     '@sphinx-software/fusion/Console',
     '@sphinx-software/fusion/Session',
+    '@sphinx-software/fusion/Validation',
 
     // Application Module
     'Http',

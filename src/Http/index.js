@@ -25,6 +25,10 @@ export class FormatUserNameMiddleware {
 @controller()
 export class WelcomeController {
 
+    /**
+     *
+     * @param {Quotes} quotes
+     */
     constructor(quotes) {
         this.quotes = quotes;
     }
