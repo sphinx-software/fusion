@@ -1,6 +1,6 @@
 import chalk from 'chalk';
-import {command, args} from "../../../../sphinx-web-stdlib/Console/index";
-import {singleton} from "../../../../sphinx-web-stdlib/MetaInjector/index";
+import {command, args} from "@sphinx-software/fusion/Console";
+import {singleton} from "@sphinx-software/fusion/MetaInjector";
 import Quotes from "./../Quotes";
 
 @singleton(Quotes)

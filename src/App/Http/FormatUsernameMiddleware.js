@@ -1,4 +1,4 @@
-import {singleton} from "../../../../sphinx-web-stdlib/MetaInjector/decorators";
+import {singleton} from "@sphinx-software/fusion/MetaInjector";
 
 @singleton()
 export default class FormatUserNameMiddleware {

@@ -1,5 +1,5 @@
-import {viewRendering} from "../../../../sphinx-web-stdlib/View/ViewServiceProvider";
-import {singleton} from "../../../../sphinx-web-stdlib/MetaInjector/index";
+import {viewRendering} from "@sphinx-software/fusion/View";
+import {singleton} from "@sphinx-software/fusion/MetaInjector";
 
 @singleton()
 @viewRendering('welcome')
