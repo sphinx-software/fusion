@@ -16,7 +16,5 @@ export default [
     '@sphinx-software/fusion/Validation',
 
     // Application Module
-    'Http',
-    'Console',
-    'Quotes'
+    'App',
 ];
