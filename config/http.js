@@ -1,4 +1,5 @@
 import koaStatic from "koa-static";
+import koaBodyParser from "koa-bodyparser";
 import path from "path";
 import SessionStartMiddleware from "@sphinx-software/fusion/Session/SessionStartMiddleware";
 
@@ -10,7 +11,11 @@ export default {
 
     // Global middlewares
     middlewares : [
+
         koaStatic(path.normalize(path.join(__dirname, '..', 'public'))),
+
+        koaBodyParser(),
+
         // Uncomment the middleware bellow to enable session service
         SessionStartMiddleware
     ],
