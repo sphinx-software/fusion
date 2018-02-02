@@ -14,6 +14,7 @@ export default [
     '@sphinx-software/fusion/Console',
     '@sphinx-software/fusion/Session',
     '@sphinx-software/fusion/Validation',
+    '@sphinx-software/fusion/I18n',
 
     // Application Module
     'App',
