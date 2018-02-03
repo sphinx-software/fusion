@@ -26,6 +26,9 @@ export class Credential {
 
     @type(String)
     username = '';
+
+    @type(String)
+    password = ''
 }
 
 @singleton()
