@@ -2,6 +2,13 @@
   "presets": ["node8"],
   "plugins": [
     "transform-decorators-legacy",
-    "dynamic-import-node"
+    "dynamic-import-node",
+    ["module-resolver", {
+      "alias": {
+        "^Fusion/(.+)": "@sphinx-software/fusion/build/Fusion/\\1",
+        "Fusion": "@sphinx-software/fusion/build/Fusion",
+        "^App/(.+)": "./src/App/\\1"
+      }
+    }]
   ]
 }

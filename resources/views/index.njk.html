@@ -3,21 +3,63 @@
 {% block title %}Sphinx Web Application{% endblock %}
 
 {% block content %}
-<div class="col-md-8 col-md-offset-2" style="margin-top: 150px">
+<div class="col-md-6 col-md-offset-3" style="margin-top: 150px">
     <div class="panel panel-default">
+        <div class="panel-heading">
+            <h1>Hi! <small>from Fusion</small></h1>
+            <p>Please login with username <strong>fusion</strong> and password <strong>fusion</strong> and any of your favorite alias</p>
+        </div>
         <div class="panel-body">
-            <h1>Hi! <small>from Sphinx</small></h1>
+            <div>
+                <form action="{{url.route('WelcomeController@user')}}" method="post">
+                    <div class="form-group {{ 'has-error' if form and form.invalid('username') }}">
+                        <label for="username">username</label>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="username" value="{{ form.value('username') if form }}"/>
+
+                        {% if form and form.invalid('username') %}
+                        <ul class="list-unstyled">
+                            {% for invalid in form.reasons('username') %}
+                            <li class="text-danger">{{ message.make(invalid, 'username', form.details('username', invalid).validatorParameters) }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+
+                    </div>
+                    <div class="form-group {{ 'has-error' if form and form.invalid('password') }}">
+                        <label for="password">password</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="password" value="{{ form.value('password') if form }}"/>
+
+                        {% if form and form.invalid('password') %}
+                        <ul class="list-unstyled">
+                            {% for invalid in form.reasons('password') %}
+                            <li class="text-danger">
+                                {{ message.make(invalid, 'password', form.details('password', invalid).validatorParameters) }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                    <div class="form-group {{ 'has-error' if form and form.invalid('alias') }}">
+                        <label for="alias">alias</label>
+                        <input type="text" class="form-control" name="alias" id="alias" placeholder="Your Alias" value="{{ form.value('alias') if form }}"/>
+
+                        {% if form and form.invalid('alias') %}
+                        <ul class="list-unstyled">
+                            {% for invalid in form.reasons('alias') %}
+                            <li class="text-danger">
+                                {{ message.make(invalid, 'Your alias', form.details('alias', invalid).validatorParameters) }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+
+                    <input type="submit" value="Login" class="btn btn-success btn-block"/>
+                </form>
+            </div>
         </div>
         <div class="panel-footer">
-            <div class="row">
-                <div class="col-md-11 col-sm-12">
-                    <p class="text-muted"><em>{{quote.content}}</em> <small style="white-space: nowrap;word-break: keep-all;">&mdash;{{quote.author}}</small></p>
-                </div>
-                <div class="col-md-1 col-sm-12">
-                    <a href="{{url.route('WelcomeController@user', {user: 'you'})}}" class="btn btn-primary btn-block"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                </div>
-                <div class="clearfix"></div>
-            </div>
+        <p class="text-muted"><em>{{quote.content}}</em> <small style="white-space: nowrap;word-break: keep-all;">&mdash;{{quote.author}}</small></p>
         </div>
     </div>
 </div>
