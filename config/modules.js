@@ -16,8 +16,6 @@ export default [
     '@sphinx-software/fusion/Validation',
     '@sphinx-software/fusion/Database',
 
-    '@sphinx-software/gluon',
-
     // Application Module
     'App',
 ];
