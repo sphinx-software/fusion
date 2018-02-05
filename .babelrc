@@ -5,8 +5,8 @@
     "dynamic-import-node",
     ["module-resolver", {
       "alias": {
-        "^Fusion/(.+)": "@sphinx-software/fusion/Fusion/\\1",
-        "Fusion": "@sphinx-software/fusion/Fusion",
+        "^Fusion/(.+)": "@sphinx-software/fusion/build/Fusion/\\1",
+        "Fusion": "@sphinx-software/fusion/build/Fusion",
         "^App/(.+)": "./src/App/\\1"
       }
     }]

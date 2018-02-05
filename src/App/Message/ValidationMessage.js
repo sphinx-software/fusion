@@ -1,6 +1,5 @@
 import format from 'string-template';
-import {provider} from "Fusion/Fusion/Fusion";
-import {ViewFactoryInterface} from "Fusion/Fusion/ServiceContracts";
+import {provider, ViewFactoryInterface} from "Fusion";
 
 class ValidationMessage {
     messages = {
