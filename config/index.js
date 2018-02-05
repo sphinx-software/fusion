@@ -6,3 +6,4 @@ export log     from './log';
 export view    from './view';
 export session from './session';
 export modules from './modules';
+export disk    from './disk';

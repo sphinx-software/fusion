@@ -13,9 +13,10 @@ export default [
     '@sphinx-software/fusion/Mail',
     '@sphinx-software/fusion/Console',
     '@sphinx-software/fusion/Session',
-
+    '@sphinx-software/disk',
     // Application Module
     'Http',
     'Console',
-    'Quotes'
+    'Quotes',
+    'Uploader'
 ];
