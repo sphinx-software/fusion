@@ -1,6 +1,6 @@
 import Quotes from "./../Quotes";
-import {singleton} from "@sphinx-software/fusion/MetaInjector";
-import {post, get, controller} from "@sphinx-software/fusion/Http";
+import {singleton} from "Fusion/MetaInjector";
+import {post, get, controller} from "Fusion/Http";
 import LoginForm from "./LoginForm";
 
 @singleton(Quotes)

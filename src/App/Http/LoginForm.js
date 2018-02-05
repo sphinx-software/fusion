@@ -1,5 +1,5 @@
-import {Form, form} from "@sphinx-software/fusion/Validation";
-import {singleton} from "@sphinx-software/fusion/MetaInjector";
+import {Form, form} from "Fusion/Validation";
+import {singleton} from "Fusion/MetaInjector";
 
 @singleton()
 @form({

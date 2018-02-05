@@ -1,7 +1,7 @@
 import koaStatic from "koa-static";
 import koaBodyParser from "koa-bodyparser";
 import path from "path";
-import SessionStartMiddleware from "@sphinx-software/fusion/Session/SessionStartMiddleware";
+import SessionStartMiddleware from "Fusion/Session/SessionStartMiddleware";
 
 export default {
     port        : process.env.HTTP_PORT   || 3000,

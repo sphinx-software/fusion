@@ -1,5 +1,5 @@
 import lodash from 'lodash';
-import {singleton} from "@sphinx-software/fusion/MetaInjector";
+import {singleton} from "Fusion/MetaInjector";
 
 @singleton()
 export default class Quotes {

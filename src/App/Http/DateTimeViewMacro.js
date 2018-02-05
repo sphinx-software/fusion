@@ -1,5 +1,5 @@
-import {viewRendering} from "@sphinx-software/fusion/View";
-import {singleton} from "@sphinx-software/fusion/MetaInjector";
+import {viewRendering} from "Fusion/View";
+import {singleton} from "Fusion/MetaInjector";
 
 @singleton()
 @viewRendering('welcome')

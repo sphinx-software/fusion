@@ -1,6 +1,6 @@
 import format from 'string-template';
-import {provider} from "@sphinx-software/fusion/Fusion/Fusion";
-import {ViewFactoryInterface} from "@sphinx-software/fusion/Fusion/ServiceContracts";
+import {provider} from "Fusion/Fusion/Fusion";
+import {ViewFactoryInterface} from "Fusion/Fusion/ServiceContracts";
 
 class ValidationMessage {
     messages = {

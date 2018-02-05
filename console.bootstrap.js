@@ -1,15 +1,13 @@
 import * as config from './config';
-
-import fusion from '@sphinx-software/fusion/Fusion/Fusion';
-import {ConsoleKernel} from '@sphinx-software/fusion';
+import fusion from 'Fusion/Fusion/Fusion';
 import Container from '@sphinx-software/container';
+import {ConsoleKernel} from 'Fusion/Fusion/ServiceContracts';
 import EventEmitter from 'events';
+import * as Modules from './manifest'
 
 (async () => {
 
-    const modules = await Promise.all(config.modules.map(module => import(module)));
-
-    modules.forEach(module => fusion.use(module));
+    fusion.use(Modules);
 
     let container = await fusion.activate(config, new Container(new EventEmitter()));
     let kernel    = await container.make(ConsoleKernel);
