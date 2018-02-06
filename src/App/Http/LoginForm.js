@@ -21,7 +21,6 @@ export default class LoginForm extends Form {
         // So the login view can get the invalid messages
         context.session.flash('login.invalid', this.result);
         context.redirect('/');
-        // context.body = this.result.toJson();
     }
 
     /**
