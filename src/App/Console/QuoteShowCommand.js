@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import {command, args} from "Fusion/Console";
 import {singleton} from "Fusion/MetaInjector";
-import Quotes from "./../Quotes";
+import Quotes from "App/Quotes";
 
 @singleton(Quotes)
 @command('quotes:show', 'Displays a random quote')

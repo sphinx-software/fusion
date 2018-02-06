@@ -9,7 +9,8 @@
         "Fusion": "@sphinx-software/fusion/build/Fusion",
         "WaveFunction": "@sphinx-software/wave-function",
 
-        "^App/(.+)": "./src/App/\\1"
+        "^App/(.+)": "./src/App/\\1",
+        "^Tests(.*)": "./test/Tests\\1"
       }
     }]
   ]
