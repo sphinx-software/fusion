@@ -9,7 +9,7 @@ import Koa from 'koa';
 export default class IndexRouteTestSuite extends TestSuite {
 
     @testCase()
-    async testIfIndexIsOkay() {
+    async testIfIndexIsOkayWithGreetingMessage() {
         // Using chai-http
         // For mor usage, see http://chaijs.com/plugins/chai-http/
         let response = await this.dispatchHttp().get('/');
