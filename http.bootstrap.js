@@ -1,14 +1,15 @@
 import * as config from './config';
-import fusion from '@sphinx-software/fusion/Fusion/Fusion';
 import Container from '@sphinx-software/container';
-import {HttpKernel, HttpRouter} from '@sphinx-software/fusion';
+import {HttpKernel, HttpRouter} from 'Fusion';
+import fusion from "Fusion/Fusion";
 import EventEmitter from 'events';
 
+import * as Modules from './manifest'
+
+
 (async () => {
+    fusion.use(Modules);
 
-    const modules = await Promise.all(config.modules.map(module => import(module)));
-
-    modules.forEach(module => fusion.use(module));
 
     let container = await fusion.activate(config, new Container(new EventEmitter()));
     let kernel    = await container.make(HttpKernel);
