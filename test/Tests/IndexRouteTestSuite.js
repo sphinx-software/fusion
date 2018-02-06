@@ -3,8 +3,6 @@ import TestSuite from "../TestSuite";
 import http from 'http';
 import {JSDOM} from 'jsdom';
 
-import Koa from 'koa';
-
 @testSuite()
 export default class IndexRouteTestSuite extends TestSuite {
 
