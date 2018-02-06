@@ -1,0 +1,1 @@
+export IndexRouteTestSuite from "./IndexRouteTestSuite";
