@@ -1,22 +1,26 @@
 export default {
 
-    default: "session"
-    defaultAdapter: "mysql",
+    "default": "session",
+    "adapter": "database",
 
-    adapters: {
-        mysql: {
-            credentialTable: "credentials",
-            usernameField: "username",
-            passwordField: "password"
+    "adapters": {
+        "database": {
+            "credentialTable": "credentials",
+            "usernameField": "username",
+            "passwordField": "password"
         },
-        mongodb: {
-            credentialDocument: "credentials",
-            usernameField: "username",
-            passwordField: "password"
+        "mongodb": {
+            "credentialCollection": "credentials",
+            "usernameField": "username",
+            "passwordField": "password"
         }
     },
 
-    session: {
-        sessionAuthKey: 'sphinx-software'
+    "session": {
+        "sessionAuthKey": "sphinx-software"
+    },
+
+    "token": {
+
     }
 }

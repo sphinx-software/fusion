@@ -6,3 +6,4 @@ export log     from './log';
 export view    from './view';
 export session from './session';
 export database from './database';
+export auth from './auth';
