@@ -14,5 +14,5 @@ export * from 'Fusion/Session';
 export * from 'Fusion/Validation';
 export * from 'Fusion/Database';
 
-    // Application Module
+// Application Module
 export * from 'App/index';
