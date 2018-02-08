@@ -1,4 +1,4 @@
-import Quotes from "./../Quotes";
+import Quotes from "App/Quotes";
 import {singleton} from "Fusion/MetaInjector";
 import {post, get, controller} from "Fusion/Http";
 import LoginForm from "./LoginForm";
