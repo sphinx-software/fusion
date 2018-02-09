@@ -26,11 +26,10 @@ export default class ValidationMessageServiceProvider {
 
     register() {
         this.container.value(ValidationMessage, new ValidationMessage());
-    }
 
-    async boot() {
-        let view = await this.container.make(ViewFactoryInterface);
+        this.container.made(ViewFactoryInterface, async view => {
+            view.global('message', await this.container.make(ValidationMessage));
 
-        view.global('message', await this.container.make(ValidationMessage));
+        })
     }
 }
