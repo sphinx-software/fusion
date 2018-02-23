@@ -1,9 +1,9 @@
 import {singleton} from "Fusion/MetaInjector";
 import {get, post, controller} from "Fusion/Http";
-import {Authenticatorinterface} from "Fusion/Auth"
+import {AuthenticatorInterface} from "Fusion/Auth"
 
 
-@singleton(Authenticatorinterface)
+@singleton(AuthenticatorInterface)
 @controller()
 export default class AuthController {
 
