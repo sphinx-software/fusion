@@ -1,29 +1,30 @@
 import {singleton} from "Fusion/MetaInjector";
 import {get, post, controller} from "Fusion/Http";
-import {SessionAuthenticator, CredentialProviderInterface} from "Fusion/Auth"
+import {Authenticatorinterface} from "Fusion/Auth"
 
 
-@singleton(SessionAuthenticator, CredentialProviderInterface)
+@singleton(Authenticatorinterface)
 @controller()
 export default class AuthController {
 
     /**
      *
      * @param auth
-     * @param provider
      */
-    constructor(auth, provider) {
+    constructor(auth) {
         this.auth = auth;
-        this.provider = provider;
     }
 
     @post('/login')
     async login(context) {
-        let credential = await this.provider.provide('rikky', '1234@4321');
+        let credential = {
+            "usename": "rikky",
+            "id": 1
+        };
         this.auth.login(credential);
         // handle after login success
         context.body = {
-            "identity": this.auth.getCredential().getIdentity()
+            "credential": this.auth.getCredential()
         }
     }
 
