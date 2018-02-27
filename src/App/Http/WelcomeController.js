@@ -19,7 +19,6 @@ export default class WelcomeController {
     async index(context) {
         context.body = context.view.make('index')
             .bind('quote', this.quotes.get())
-            .bind('form', context.session.get('login.invalid'))
         ;
     }
 
