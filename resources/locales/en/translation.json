@@ -1,3 +1,8 @@
 {
-  "test": "english"
+  "length": {
+    "min": "Field is too short, {{validatorParameters.0}} characters minimum",
+    "max": "Field is too long, {{validatorParameters.0}} characters maximum"
+  },
+  "equals": "Field value must equals {{validatorParameters.0}}",
+  "required": "This field is required"
 }

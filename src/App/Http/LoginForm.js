@@ -19,7 +19,7 @@ export default class LoginForm extends Form {
     async invalid(context, next) {
         // We'll flash the login result to the session
         // So the login view can get the invalid messages
-        context.session.flash('login.invalid', this.result);
+        context.session.flash('$form.errors', this.result);
         context.redirect('/');
     }
 

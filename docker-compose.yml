@@ -1,11 +1,20 @@
 version: "3"
 
 services:
-  mongodb:
-    image: "mongo:latest"
-    ports:
-      - "27017:27017"
-  redis:
-    image: "redis:latest"
-    ports:
-      - "6379:6379"
+
+  web-skeleton:
+     build: .
+     container_name: "web-skeleton"
+     ports:
+        - "8080:80"
+     working_dir: /usr/src/server
+     environment:
+        - HTTP_PORT=80
+        - HTTP_HOST=localhost:8080
+        - NODE_ENV=staging
+     expose:
+        - 80
+     volumes:
+        - .:/usr/src/server
+        - /usr/src/server/node_modules
+     command: "npm start"

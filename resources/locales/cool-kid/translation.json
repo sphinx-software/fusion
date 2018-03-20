@@ -1,0 +1,8 @@
+{
+  "length": {
+    "min": "⚠️ ➤ >= {{validatorParameters.0}} 🙅",
+    "max": "⚠️ ➤ <= {{validatorParameters.0}} 🙅"
+  },
+  "equals": "⚠️ ➤ {{validatorParameters.0}} 🤦",
+  "required": "⚠️ ➤ ╭∩╮（︶︿︶）╭∩╮ required 🤦️"
+}

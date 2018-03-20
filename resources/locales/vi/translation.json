@@ -1,3 +1,8 @@
 {
-  "test": "vietnam"
+  "length": {
+    "min": "Trường quá ngắn, vui lòng nhập tối thiểu {{validatorParameters.0}} ký tự",
+    "max": "Trường quá dài, vui lòng nhập tối đa {{validatorParameters.0}} ký tự"
+  },
+  "equals": "Trường phải có giá trị bằng {{validatorParameters.0}}",
+  "required": "Đây là trường bắt buộc"
 }

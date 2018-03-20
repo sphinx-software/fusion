@@ -12,42 +12,42 @@
         <div class="panel-body">
             <div>
                 <form action="{{url.route('WelcomeController@user')}}" method="post">
-                    <div class="form-group {{ 'has-error' if form and form.invalid('username') }}">
+                    <div class="form-group {{ 'has-error' if $form.invalid('username') }}">
                         <label for="username">username</label>
-                        <input type="text" class="form-control" name="username" id="username" placeholder="username" value="{{ form.value('username') if form }}"/>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="username" value="{{ $form.value('username') }}"/>
 
-                        {% if form and form.invalid('username') %}
+                        {% if $form.invalid('username') %}
                         <ul class="list-unstyled">
-                            {% for invalid in form.reasons('username') %}
-                            <li class="text-danger">{{ message.make(invalid, 'username', form.details('username', invalid).validatorParameters) }}</li>
+                            {% for invalid in $form.reasons('username') %}
+                            <li class="text-danger">{{ invalid | translate($form.details('username', invalid))}}</li>
                             {% endfor %}
                         </ul>
                         {% endif %}
 
                     </div>
-                    <div class="form-group {{ 'has-error' if form and form.invalid('password') }}">
+                    <div class="form-group {{ 'has-error' if $form.invalid('password') }}">
                         <label for="password">password</label>
-                        <input type="password" class="form-control" name="password" id="password" placeholder="password" value="{{ form.value('password') if form }}"/>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="password" value="{{ $form.value('password') }}"/>
 
-                        {% if form and form.invalid('password') %}
+                        {% if $form.invalid('password') %}
                         <ul class="list-unstyled">
-                            {% for invalid in form.reasons('password') %}
+                            {% for invalid in $form.reasons('password') %}
                             <li class="text-danger">
-                                {{ message.make(invalid, 'password', form.details('password', invalid).validatorParameters) }}
+                                {{ invalid | translate($form.details('password', invalid)) }}
                             </li>
                             {% endfor %}
                         </ul>
                         {% endif %}
                     </div>
-                    <div class="form-group {{ 'has-error' if form and form.invalid('alias') }}">
+                    <div class="form-group {{ 'has-error' if $form.invalid('alias') }}">
                         <label for="alias">alias</label>
-                        <input type="text" class="form-control" name="alias" id="alias" placeholder="Your Alias" value="{{ form.value('alias') if form }}"/>
+                        <input type="text" class="form-control" name="alias" id="alias" placeholder="Your Alias" value="{{ $form.value('alias') }}"/>
 
-                        {% if form and form.invalid('alias') %}
+                        {% if $form.invalid('alias') %}
                         <ul class="list-unstyled">
-                            {% for invalid in form.reasons('alias') %}
+                            {% for invalid in $form.reasons('alias') %}
                             <li class="text-danger">
-                                {{ message.make(invalid, 'Your alias', form.details('alias', invalid).validatorParameters) }}
+                                {{ invalid | translate($form.details('alias', invalid)) }}
                             </li>
                             {% endfor %}
                         </ul>
