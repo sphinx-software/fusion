@@ -8,8 +8,13 @@ import {AuthenticatorInterface} from "Fusion/Auth"
 export default class AuthController {
 
     /**
+     * {AuthenticatorInterface}
+     */
+    auth;
+
+    /**
      *
-     * @param auth
+     * @param {AuthenticatorInterface} auth
      */
     constructor(auth) {
         this.auth = auth;
