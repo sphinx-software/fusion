@@ -13,7 +13,7 @@ export * from 'Fusion/Console';
 export * from 'Fusion/Session';
 export * from 'Fusion/Validation';
 export * from 'Fusion/Database';
-export * from 'Fusion/i18n';
+export * from 'Fusion/I18n';
 
 // Application Module
 export * from 'App/index';
